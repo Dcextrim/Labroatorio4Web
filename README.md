@@ -1,3 +1,7 @@
 # Labroatorio4Web
 
-![Image text]([https://github.com/Dcextrim/Labroatorio4Web/Metaknight.png](https://github.com/Dcextrim/Labroatorio4Web/blob/main/Metaknight.png))
+<div align="center">
+  <a href="https://github.com/Dcextrim/Labroatorio4Web">
+    <img src="Metaknight.png" alt="Logo" width="80" height="80">
+  </a>
+
