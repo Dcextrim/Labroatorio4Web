@@ -1,0 +1,102 @@
+.contenedor{
+    display: flex;
+    width: 800px;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caramargen {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+
+}
+
+.cara {
+    display: flex;
+    position: relative;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.cara::before,
+.cara::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.cara::before {
+    left: 0;
+    background: #EFECFB;
+}
+
+.cara::after {
+    right: 0;
+    background: #86899D;
+}
+
+
+.ojos {
+    position: relative;
+    width: 500px;
+    height: 250px;
+}
+
+.ojo {
+    position: absolute;
+    width: 160px;
+    height: 180px;
+    background: black;
+    clip-path: polygon(100% 48%, 100% 85%, 100% 100%, 14% 47%, 0 0, 37% 32%);
+}
+
+.ojo:first-child {
+    top: 170px;
+    left: 65px;
+}
+
+.ojo:last-child {
+    z-index: 2;
+    top: 170px;
+    right: 65px;
+    transform: scaleX(-1);
+}
+
+
+.pupila {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background: yellow;
+    border-radius: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.margenpuntas{
+    position: absolute;
+    width: 450px;
+    height: 200px;
+    top: 135px;
+}
+.mascarapuntas {
+    z-index: 1;
+    position: absolute;
+    width: 85px;
+    height: 135px;
+    background: linear-gradient(to right, #7A7B9D 50%, #D1D0F0 50%);
+    clip-path: polygon(50% 0%, 77% 18%, 50% 100%, 23% 18%);
+}
+
+.mascarapuntas:nth-child(1) { top: 45px; right: 100px; transform: rotate(27deg); }
+.mascarapuntas:nth-child(2) { top: 45px; left: 100px; transform: rotate(-27deg); }
+.mascarapuntas:nth-child(3) { top: 80px; right: 52px; transform: rotate(45deg); }
+.mascarapuntas:nth-child(4) { top: 80px; left: 52px; transform: rotate(-45deg); }
